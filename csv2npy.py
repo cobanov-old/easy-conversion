@@ -8,7 +8,7 @@ file_name, ext = os.path.splitext(file_path)
 
 if ext == ".csv":
     data = pd.read_csv(file_path).values
-    np.save(file_name + ".csv", data)
+    np.save(file_name + ".npy", data)
 
     print(data.shape)
 
